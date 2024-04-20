@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Щеголева Анастасия">
+    <meta name="description" content="Онлайн-магазин духов">
+    <meta name="keywords" content="духи, аромат, магазин">
+    <title>ParfumS</title>
+
+    <!--подключение css файла-->
+    <link rel="stylesheet" href="css/site.css">
+</head>
+
+<body>
+    <!--непронумированный список вверху страницы-->
+    <ul id="dcrp-site">
+        <li><a href="#">Бонусы клиентам</a></li>
+        <li><a href="#">Гарантии</a></li>
+        <li><a href="#">Доставка и оплата</a></li>
+    </ul>
+
+    <!--номер телефона-->
+    <h4 id="number">8 (800) 500-22-75 <b style="color: silver">бесплатный звонок</b></h4>
+    <!--Заголовок-->
+    <h1 id="text-parfum">PARFUM<b style="color:pink">'</b>S</h1>
+    <!--поиск и сброс поиска-->
+    <form action="" method="post">
+        <input type="text" placeholder="поиск" id="search">
+        <input value="X" type="reset" id="clear">
+    </form><br>
+    <!--фото меню-->
+    <img id='img-menu' src="img/menu.png"><br>
+
+    <!--меню выбора духов-->
+    <ul id="menu">
+        <li><a href="#">Новинки</a></li>
+        <li><a href="#">Выбор редакции</a></li>
+        <li><a href="#">Что покупают сейчас</a></li>
+    </ul>
+
+    <!--каталог духов-->
+    <div id="tomford" class="parfums"><img src="img/tomford.png" alt="Tom Ford" title="Tom Ford"></div>
+    <div id="parfum_mans" class="parfums"><img src="img/parfum_mans.png" alt="Byredo" title="Byredo"></div>
+    <div id="parfum" class="parfums"><img src="img/parfum.png" alt="Parfums" title="Parfums"></div>
+    <div id="zar" class="parfums"><img src="img/zar.png" alt="Zarkorerfume" title="Zarkorerfume"></div>
+
+    <div id="comment"><h1>Отзывы об ароматах</h1></div>
+
+    <!--отзывы-->
+    <div id='left-comment' class="reviews">               <h4><em>Moresque Sahara Blue</em></h4>
+              10.02.2024<br>              Ощутимый акцент розового
+              перца в начале,который потом
+              мягко уступает место лаванде
+              и амбре. Превосходно!</div>
+    <div class="reviews">               <h4><em>Memo Eau De Memo</em></h4>
+              10.02.2024<br>              У меня аромат начинается с розы
+              и табака, но потом становится
+              менее выразительным. Время от
+              времени использую ради
+              приятного начала</div>
+
+    <div class="reviews">             <h4><em>Boadicea The Victorious</em></h4>
+              10.02.2024<br>              Первоначальный всплеск
+              цитрусов просто завораживает!
+              Со временем аромат
+              преображается, даря нежные
+              древесные нюансы.
+              Стойкость впечатляет</div>
+
+    <div class="reviews">              <h4><em>M. Micallef Mon Parfum</em></h4>
+              10.02.2024<br>              Это мой новый фаворит!
+              Отличается изысканностью и ненавязчивостью.
+              Похож на Капричио, кажется,
+              что особенно выделяется в тёплую,
+              влажную погоду</div>
+
+    <!--таблица фото + описание-->
+    <table title="Фирма Parfums" id="company" align="center">
+        <tbody>
+            <tr>
+              <th><img src="img/parfums_foto-round.png" alt="Parfums company" title="Parfums company"></th>
+                <td><pre>                        <b><em style="font-size: 24px">Parfums - интернет магазин парфюмерии</em></b><br>
+                    Добро пожаловать в магазин PARFUM`S!
+                    Больше 10 лет мы успешно доставляем нашим покупателям нишевую и эксклюзивную парфюмерию.
+                    На страницах сайта есть как модные новинки этого года, так и проверенная временем классика.
+                    Парфюмерия — наша страсть, но главная ценность для нас — покупатели.<details><summary>Читать далее...</summary>
+                        Чтобы клиент был доволен покупкой, мы готовы консультироватьего на всех этапах
+                        выбора и приобретения аромата. Мы поможем вам найти идеальный,
+                        «тот самый» запах, который станет вашим главным украшением и визитной карточкой.</details></pre>
+               </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!--ввод почты-->
+    <div id="email-input">
+        <form>
+            <label>Подпишитесь на рассылку</label>
+            <input type="email" placeholder="ваш e-mail">
+        </form>
+    </div>
+</body>
+</html>

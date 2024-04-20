@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container">
+    {% if engineer %}
+    <div class="text-center">
+        <h1>Инженерные тренажеры</h1>
+        <img src="/static/img/engineer.png" title="engineer" alt="engineer">
+    </div>
+    {% else %}
+    <div class="text-center">
+        <h1>Научные симуляторы</h1>
+        <img src="/static/img/science.png" title="science" alt="science">
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

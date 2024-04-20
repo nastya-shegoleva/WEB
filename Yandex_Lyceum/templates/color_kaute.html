@@ -1,0 +1,35 @@
+{% extends 'base.html'%}
+{% block content %}
+<div class="container">
+    <h2 class="text-center">Оформление каюты</h2>
+    <table style="margin-left: 200px" class="text-center" border="2px">
+        <thead>
+        <tr>
+            <th>Цвет стен</th>
+            <th>Эмблема</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            {% if gender == 'female'%}
+                {% if age >= 21%}
+                    <td><div  style="width: 348px; height: 442px; background: red;"></div></td>
+                    <td><img src="/static/img/female_old.png" title="female_old" alt="female_old"></td>
+                {% else %}
+                    <td><div  style="width: 460px; height: 460px; background: pink;"></div></td>
+                    <td><img src="/static/img/female_young.png" title="female_young" alt="female_young"></td>
+                {% endif %}
+            {% elif gender == 'male'%}
+                {% if age >= 21%}
+                    <td><div  style="width: 348px; height: 442px; background: #115971;"></div></td>
+                    <td><img src="/static/img/female_old.png" title="male_old" alt="male_old"></td>
+                {% else %}
+                    <td><div  style="width: 460px; height: 460px; background: blue;"></div></td>
+                    <td><img src="/static/img/female_young.png" title="male_young" alt="male_young"></td>
+                {% endif %}
+            {% endif %}
+        </tr>
+        </tbody>
+    </table>
+</div>
+{% endblock %}

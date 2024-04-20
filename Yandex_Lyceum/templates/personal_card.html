@@ -1,0 +1,11 @@
+{% extends 'base.html'%}
+{% block content %}
+<div style="margin-left: 400px">
+  {% for item in member['crew members'] %}
+        <h2>{{item["name"]}} {{item["firstname"]}}</h2>
+        <img src='{{item["foto"]}}'>
+        <div>{{', '.join(item['lst_prof'])}}</div>
+    {% endfor %}
+</div>
+
+{% endblock %}

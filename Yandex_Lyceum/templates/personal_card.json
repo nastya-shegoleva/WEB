@@ -1,0 +1,13 @@
+{
+  "crew members": [
+    {
+      "name": "Энди",
+      "firstname": "Уир",
+      "foto": "/static/img/member1.png",
+      "lst_prof": [
+        "астрогеолог",
+        "специалист по радиационной защите"
+      ]
+    }
+  ]
+}
